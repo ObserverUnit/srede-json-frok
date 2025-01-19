@@ -425,7 +425,7 @@ pub mod ser;
 mod ser;
 pub mod value;
 
-mod io;
+pub mod io;
 #[cfg(feature = "std")]
 mod iter;
 #[cfg(feature = "float_roundtrip")]
