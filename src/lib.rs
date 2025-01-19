@@ -390,12 +390,14 @@ pub use crate::de::from_reader;
 pub use crate::de::{from_slice, from_str, Deserializer, StreamDeserializer};
 #[doc(inline)]
 pub use crate::error::{Error, Result};
-#[doc(inline)]
-pub use crate::ser::{to_string, to_string_pretty, to_vec, to_vec_pretty};
 #[cfg(feature = "std")]
 #[cfg_attr(docsrs, doc(cfg(feature = "std")))]
 #[doc(inline)]
-pub use crate::ser::{to_writer, to_writer_pretty, Serializer};
+pub use crate::ser::Serializer;
+#[doc(inline)]
+pub use crate::ser::{
+    to_string, to_string_pretty, to_vec, to_vec_pretty, to_writer, to_writer_pretty,
+};
 #[doc(inline)]
 pub use crate::value::{from_value, to_value, Map, Number, Value};
 
